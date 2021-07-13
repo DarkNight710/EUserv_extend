@@ -5,9 +5,8 @@ import time
 import requests
 from bs4 import BeautifulSoup
 
-USERNAME = ""
-PASSWORD = ""
-TOKEN = ""
+USERNAME = os.environ["USERNAME"]
+PASSWORD = os.environ["PASSWORD"]
 PROXIES = {
     "http": "http://127.0.0.1:10808",
     "https": "http://127.0.0.1:10808"
